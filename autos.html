@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>autos</title>
+	<link rel="stylesheet" href="styles.css">
+    <script>
+        function mostrarImagen(capaId) {
+            document.getElementById(capaId).style.display = 'block';
+        }
+
+        function ocultarImagen(capaId) {
+            document.getElementById(capaId).style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+	<header>
+        <h1>Renta de Autos Deportivos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="autos.html">Autos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="contenido">
+        <h2>Galería de Autos</h2>
+        <div class="galeria">
+            <img src="auto1.jpg" alt="auto1.jpg" onmouseover="mostrarImagen('capa1')" onmouseout="ocultarImagen('capa1')" width="270" height="250">
+            <img src="auto2.jpg" alt="Auto Deportivo 2" onmouseover="mostrarImagen('capa2')" onmouseout="ocultarImagen('capa2')" width="270" height="250">
+            <img src="auto3.jpg" alt="Auto Deportivo 3" onmouseover="mostrarImagen('capa3')" onmouseout="ocultarImagen('capa3')" width="270" height="250">
+        </div>
+
+        <!-- Capas ocultas con detalles de los autos -->
+        <div id="capa1" class="detalle" style="display: none;">
+            <h3>Auto Deportivo 1</h3>
+            <p>Descripción del auto 1.
+			carro de color verde pequeño y bajo para dos pasajeros que ofrece una respuesta rápida, puede circular a altas velocidades y está diseñado para ser conducido en la vía pública.</p>
+        </div>
+        <div id="capa2" class="detalle" style="display: none;">
+            <h3>Auto Deportivo 2</h3>
+            <p>Descripción del auto 2.
+			Carro deportivo verde esmeralda, cuyo diseño se basa en maximizar el rendimiento por encima de lo práctico. El peso suele ser inferior a la tonelada y dispone de una altura reducida con respecto al suelo. La transmisión también está preparada para soportar los continuos cambios de velocidad de manera efectiva.</p>
+        </div>
+        <div id="capa3" class="detalle" style="display: none;">
+            <h3>Auto Deportivo 3</h3>
+            <p>Descripción del auto 3.
+			 Características de seguridad: airbags, control de estabilidad, sistemas antirrobo.
+			 Características de confort: climatizador, asientos calefactados. 
+			 Características de diseño: dimensiones, forma, color negro.</p>
+        </div>
+    </section>
+
+   
+</body>
+</html>
